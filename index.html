@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人简历 - 多视频展示</title>
+    <title>面向智能电视的虚实空间自然交互技术研究</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -52,17 +52,18 @@
 
 <!-- 视频1 -->
 <!-- 横版视频 -->
-<h1>基于视觉跟踪的仿真视窗显示技术</h1>
-<p style="text-align: center; font-size:20px">本项目旨在探索通过<strong>视觉跟踪技术和实时渲染实现沉浸式交互体验</strong>。利用人脸跟踪算法，实时调整视窗显示内容，使用户从不同视角观察时能感受到3D效果的变化，提升了沉浸感和互动性。</p>
+<h1>面向智能电视的虚实空间自然交互技术研究</h1>
+<p style="text-align: center; font-size:20px">本项目旨在探索面向智能电视的虚实交互，项目通过基于视点跟踪的仿真视窗和轻量化精确手势交互实现沉浸式观看体验和直观的交互逻辑。</p>
 <div class="video-container">
-    <h2>人脸跟踪+动态渲染</h2>
+    <h2>基于视点跟踪的仿真视窗</h2>
     <div class="video-wrapper">
         <video controls>
             <source src=./video/aa/addFace.mp4 type="video/mp4">
             您的浏览器不支持 HTML5 视频。
         </video>
     </div>
-    <p>通过人脸的跟踪实现3D的视觉效果。</p>
+    <p>在本系统中，通过视点跟踪算法以及自适应渲染管线动态调整虚拟视角，实现全屏贴合，提高虚拟空间的沉浸感。
+        此外，本文还引入了卡尔曼滤波算法对人脸跟踪轨迹进行优化，以减少由于环境变化和传感器噪声带来的跟踪抖动，从而提升交互的稳定性和流畅度。</p>
 </div>
 
 <!-- 视频2 -->
@@ -75,11 +76,13 @@
             您的浏览器不支持 HTML5 视频。
         </video>
     </div>
-    <p>利用 Unity 碰撞检测模块设计场景中鱼的随机游动算法，通过引入危险距离判断有效避免穿模现象发生。</p>
+    <p>系统采用了一系列随机性方法，以增强鱼类游动的自然感，使其不至于呈现机械化、重复性的运动轨迹。当前实现中，
+        随机性主要影响鱼类的游动速度与转向方向，未来可以扩展到更复杂的模拟场景，如流
+        体运动、体积云模拟等。</p>
 </div>
 
 <div class="video-container">
-    <h2>人手检测</h2>
+    <h2>人手交互</h2>
     <div class="video-wrapper">
         <!-- 替换为您的视频链接 -->
         <video controls>
@@ -87,11 +90,11 @@
             您的浏览器不支持 HTML5 视频。
         </video>
     </div>
-    <p>当检测到人手快速移动时，鱼会收到惊吓，进而速度加快。</p>
+    <p>当前展示的是当检测到人手快速移动时，鱼会收到惊吓，进而速度加快。</p>
 </div>
 
 <div class="video-container">
-    <h2>人脸跟踪</h2>
+    <h2>视点跟踪</h2>
     <div class="video-wrapper">
         <!-- 替换为您的视频链接 -->
         <video controls>
@@ -99,7 +102,8 @@
             您的浏览器不支持 HTML5 视频。
         </video>
     </div>
-    <p>通过人脸关键点检测+PNP算法实现人脸的跟踪。</p>
+    <p>通过 MediaPipe Face 模块和 3DDFA-V2方法分别得到人脸的 2D 关键点和人脸自适应三维模型，
+        然后通过 PNP 算法计算人脸的位姿，实现高精度、低时延的三维位姿估计，这一方法能够实时检测用户的人脸姿态。</p>
 </div>
 <p style="text-align: center; font-size:20px">视频经过压缩，高清图像可通过此<a href="http://49.235.90.42:801/index.php/s/sLcZF8636mXZ53G?path=%2F" target="_blank">链接</a>访问</p>
 <!-- 可以继续添加更多视频... -->
